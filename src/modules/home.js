@@ -6,9 +6,9 @@ const navItems = `
     signature cuisines await you...
   </div>
   <div>
-    <button>HOME</button>
-    <button>MENU</button>
-    <button>CONTACT</button>
+    <button class="nav-button">HOME</button>
+    <button class="nav-button">MENU</button>
+    <button class="nav-button">CONTACT</button>
   </div>
   `;
 
@@ -20,20 +20,21 @@ const navItems = `
   const listItems = `
     <li id='credit1' class='credit-item'>
       <p>Icon</p>
-      <p>Fast Service</p>
+      <p class='credit-text'>Fast Service</p>
     </li>
     <li id= 'credit2' class='credit-item'>
       <p>Icon</p>
-      <p>Fresh Food</p>
+      <p class='credit-text'>Fresh Food</p>
     </li>
     <li id='credit3' class='credit-item'>
       <p>Icon</p>
-      <p>24/7 available</p>
+      <p class='credit-text'>24/7 available</p>
     </li>
   `
 
 const header = () => {
   const hdr = helperModule.createTag('nav', navItems);
+  hdr.setAttribute('id', 'nav-bar');
   helperModule.appendTag(helperModule.wrapperDiv(), hdr);
 };
 
