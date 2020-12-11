@@ -7,11 +7,13 @@ const pageLoad = () => {
 header();
 mainContent();
 
-const clicked = document.getElementById('nav-bar');
-clicked.addEventListener('click', (e) => {
-  if (e.target.classList.contains('nav-button')) {
+const buttons = document.getElementsByClassName('nav-button');
+console.log(buttons);
+Array.from(buttons).forEach((button) => {
+  button.addEventListener('click', (e) => {
     e.target.classList.add('active');
-  }
+  });
 });
+
 
 export { pageLoad };

@@ -6,7 +6,7 @@ const navItems = `
     signature cuisines await you...
   </div>
   <div>
-    <button class="nav-button">HOME</button>
+    <button class="nav-button active">HOME</button>
     <button class="nav-button">MENU</button>
     <button class="nav-button">CONTACT</button>
   </div>

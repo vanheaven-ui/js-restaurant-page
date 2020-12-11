@@ -77,18 +77,19 @@ nav {
   border: none;
   background-color: #d3cca8;
   color: #771d26;
-  transition: all 0.2s;
   cursor: pointer;
 }
 
-.active {
-  border: 2px solid #771d26;
-  transform: scale(1.1);
+.nav-button:hover {
+  background-color: #771d26;
+  color: #d3cca8;
 }
 
-.nav-button:hover {
-  background-color: #d3cca8;
-  color: #771d26;
+.active {
+  border: 2px solid #d3cca8;
+  transform: scale(1.1);
+  background-color: #771d26;
+  color: #d3cca8;
 }
 
 .main-content {
