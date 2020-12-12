@@ -1,4 +1,7 @@
-import { header, mainContent } from './home.js';
+import header from './nav.js';
+import { mainContent } from './home.js';
+import renderMenuPage from './menu.js';
+
 
 const pageLoad = () => {
   console.log('This is the page load');
@@ -6,14 +9,8 @@ const pageLoad = () => {
 
 header();
 mainContent();
+renderMenuPage();
 
-const buttons = document.getElementsByClassName('nav-button');
-console.log(buttons);
-Array.from(buttons).forEach((button) => {
-  button.addEventListener('click', (e) => {
-    e.target.classList.add('active');
-  });
-});
 
 
 export { pageLoad };
