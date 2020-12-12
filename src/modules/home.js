@@ -20,7 +20,7 @@ import helperModule from './helpers.js';
     </li>
   `
 
-const mainContent = () => {
+const renderHomePage = () => {
   const sectionWrapper = helperModule.createTag('section');
   sectionWrapper.setAttribute('class', 'main-content')  
 
@@ -50,4 +50,4 @@ const mainContent = () => {
   helperModule.appendTag(helperModule.wrapperDiv(), sectionWrapper);
 }
 
-export { mainContent };
+export { renderHomePage };

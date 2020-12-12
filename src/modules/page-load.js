@@ -1,5 +1,5 @@
 import header from './nav.js';
-import { mainContent } from './home.js';
+import { renderHomePage } from './home.js';
 import renderMenuPage from './menu.js';
 
 
@@ -8,7 +8,7 @@ const pageLoad = () => {
 }
 
 header();
-mainContent();
+renderHomePage();
 renderMenuPage();
 
 
