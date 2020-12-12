@@ -49,10 +49,10 @@ h1 {
   background-color: rgba(0, 0, 0, 0.3);
   top: 40px;
   position: relative;
-  color: rgb(255, 200, 34);
-  border-left: 5px solid rgb(255, 200, 34);
+  color: #ffc822;
+  border-left: 5px solid #ffc822;
   border-bottom-right-radius: 200px;
-  border-right: 5px solid rgb(255, 200, 34);
+  border-right: 5px solid #ffc822;
 }
 
 .nav-wrapper {
@@ -103,6 +103,7 @@ nav {
 .left-section {
   background-image: url(../images/img1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .left-section button {
@@ -123,6 +124,7 @@ nav {
 .right-section {
   background-image: url('../images/img.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .credit li {
@@ -148,4 +150,115 @@ nav {
   border: 2px solid #af5908;
   background-color: #af59084d;
   transform: rotate(15deg);
+}
+
+.menu-bar {
+  background-image: url(../images/img1.jpg);
+  background-size: 20%;
+}
+
+.menus {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f1f1e2e6;
+  border: 1px solid rgb(197, 142, 80);
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 1px 2px 3px #333;
+}
+
+.menu-title {
+  color: #771d26;
+  font-weight: 700;
+  border-bottom-right-radius: 150px;
+  border-right: 2px solid #ff8d22;
+  border-bottom: 2px solid #ff8d22;
+  border-left: 2px solid #ff8d22;
+  width: max-content;
+  margin: 30px auto 20px;
+  padding: 0 12px;
+}
+
+.item-note {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.contact-section {
+  background-image: url(../images/img.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: 0 30%;
+  padding-top: 10px;
+}
+
+.contact-section h4 {
+  color: #f1f1ef;
+  font-weight: 900;
+  font-size: 1.8rem;
+  width: max-content;
+  margin: 0px auto;
+  background-color: rgba(255, 68, 34, 0.5);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 0 20px;
+}
+
+.contact-title {
+  background-color: rgb(255, 228, 196, 0.4);
+  font-size: 2.5rem;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-evenly;
+  border: 1px soild #333;
+  border: 1px solid #f1f1ef;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.contact-panel {
+  width: max-content;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #f1f1ef;
+  border-radius: 40%;
+  background-color: rgb(255,99,71, 0.4);
+  color: #f1f1ef;
+}
+
+.nav-panel button {
+  padding: 30px;
+  border-top-right-radius: 50px;
+}
+
+.panel-title {
+  border-bottom: 2px solid #af5908;
+  width: max-content;
+  margin: 0 auto;
 }
