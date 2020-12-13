@@ -15,7 +15,8 @@ const navItems = `
   const header = () => {
     const hdr = helperModule.createTag('nav', navItems);
     hdr.setAttribute('id', 'nav-bar');
-    helperModule.appendTag(helperModule.wrapperDiv(), hdr);
+    return hdr;
+
   };
 
   export default header;

@@ -140,7 +140,7 @@ const renderContactPage = () => {
  
   helperModule.appendTag(contactWrapper, navPanel);
 
-  helperModule.appendTag(helperModule.wrapperDiv(), contactWrapper);
+  return contactWrapper;
 }
 
 export default renderContactPage;

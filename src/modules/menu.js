@@ -99,6 +99,7 @@ const createDinner = () => {
 
 const renderMenuPage = () => {
   const menuSection = helperModule.createTag('section');
+  menuSection.setAttribute('class', 'menu-section');
   const menuWrapper = helperModule.createTag('div');
   menuWrapper.setAttribute('class', 'menu-bar')
   const selectMenu = helperModule.createTag('select', selectItems);
@@ -162,8 +163,7 @@ const renderMenuPage = () => {
 
   helperModule.appendTag(menuSection, menuWrapper);
 
-  helperModule.appendTag(helperModule.wrapperDiv(), menuSection);
-
+  return menuSection;
 }
 
 export default renderMenuPage;

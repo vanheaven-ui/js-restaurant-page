@@ -45,9 +45,9 @@ const renderHomePage = () => {
 
   const rightMainSection = helperModule.createTag('section');
   rightMainSection.setAttribute('class', 'right-section');
-  helperModule.appendTag(sectionWrapper, rightMainSection);  
-
-  helperModule.appendTag(helperModule.wrapperDiv(), sectionWrapper);
+  helperModule.appendTag(sectionWrapper, rightMainSection);
+  
+  return sectionWrapper;
 }
 
 export { renderHomePage };
