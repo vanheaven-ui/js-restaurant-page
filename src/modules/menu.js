@@ -170,4 +170,4 @@ const renderMenuPage = () => {
 
 }
 
-export default renderMenuPage ;
+export default renderMenuPage;
