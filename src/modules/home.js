@@ -1,9 +1,10 @@
 import helperModule from './helpers.js';
 
+const renderHomePage = () => {
   const headingText = `
   Food is a necessity for life and at UDine, it is a necessity to give the
   best of foods in the best way possible.
-  `
+  `;
 
   const listItems = `
     <li id='credit1' class='credit-item'>
@@ -18,9 +19,8 @@ import helperModule from './helpers.js';
       <p>Icon</p>
       <p class='credit-text'>24/7 available</p>
     </li>
-  `
-
-const renderHomePage = () => {
+  `;
+  
   const sectionWrapper = helperModule.createTag('section');
   sectionWrapper.setAttribute('class', 'main-content')  
 

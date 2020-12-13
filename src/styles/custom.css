@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/Langar-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'MyFont1';
+  src: url('../fonts/EastSeaDokdo-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'MyFont2';
+  src: url('../fonts/Pacifico-Regular.ttf') format('ttf');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -43,7 +58,14 @@ h1 {
   border-bottom: 2px solid #771d26;
 }
 
+#logo-section img {
+  width: 200px;
+  border-radius: 50;
+  border-radius: 20%;
+}
+
 .heading {
+  font-family: 'myFont1';
   width: 50%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.3);
@@ -127,6 +149,10 @@ nav {
   background-repeat: no-repeat;
 }
 
+.credit-item {
+  font-family: 'MyFont2';
+}
+
 .credit li {
   display: flex;
   flex-direction: column;
@@ -184,11 +210,18 @@ nav {
 .item-note {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .menu-item {
   display: flex;
   justify-content: space-around;
+  box-shadow: 2px 3px 4px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px 0;
+  border-radius: 20px;
+  margin-bottom: 12px;
 }
 
 .menu-item img {

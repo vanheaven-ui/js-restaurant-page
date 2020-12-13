@@ -2,13 +2,6 @@ import helperModule from './helpers.js';
 import '../styles/custom.css';
 import menuImg from '../images/img.jpg';
 
-const selectItems = `
-<option value="Select">Select menu</option>
-<option value="Breakfast">BreakFast</option>
-<option value="Brunch">Brunch</option>
-<option value="Lunch">Lunch</option>
-<option value="Dinner">Dinner</option>
-`
 // Using Module
 const createMenuItem = (() => {
   const createMenu = (classAttribute) => {
@@ -98,6 +91,14 @@ const createDinner = () => {
 }
 
 const renderMenuPage = () => {
+  const selectItems = `
+    <option value="Select">Select menu</option>
+    <option value="Breakfast">BreakFast</option>
+    <option value="Brunch">Brunch</option>
+    <option value="Lunch">Lunch</option>
+    <option value="Dinner">Dinner</option>
+  `;
+  
   const menuSection = helperModule.createTag('section');
   menuSection.setAttribute('class', 'menu-section');
   const menuWrapper = helperModule.createTag('div');

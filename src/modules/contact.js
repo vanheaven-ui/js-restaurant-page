@@ -1,27 +1,27 @@
 import helperModule from './helpers.js';
 
-const panelItems = `
-  <button id="address">ADDRESS</button>
-  <button id="Email">MESSAGE</button>
-  <button id="Mobile">SOCIAL</button>
-`;
-
-const pTags = [
-  {
-    tag: 'p',
-    text: 'Address: Kampala Uganda'
-  }, 
-  {
-    tag: 'p',
-    text: 'Email: ebtwino718@yahoo.com'
-  }, 
-  {
-    tag: 'p',
-    text: 'Mobile: 0785163925'
-  }
-];
-
 const createSections = (() => {
+  const panelItems = `
+    <button id="address">ADDRESS</button>
+    <button id="Email">MESSAGE</button>
+    <button id="Mobile">SOCIAL</button>
+  `;
+
+  const pTags = [
+    {
+      tag: 'p',
+      text: 'Address: Kampala Uganda'
+    }, 
+    {
+      tag: 'p',
+      text: 'Email: ebtwino718@yahoo.com'
+    }, 
+    {
+      tag: 'p',
+      text: 'Mobile: 0785163925'
+    }
+  ];
+
   const createTitle = (classAttribute, text, h) => {
     const title = helperModule.createTag(h, text);
     title.setAttribute('class', classAttribute);

@@ -17,22 +17,17 @@ const pageLoad = () => {
     });
   }
 
- const nodes = helperModule.wrapperDiv().childNodes;
-
- nodes.forEach((n, index) => {
-  console.log(n);
- });
-
   const resetDom = () => {
-    // helperModule.wrapperDiv.removeChild('renderHomePage()');
-    // helperModule.wrapperDiv.removeChild('renderMenuPage()');
-    // helperModule.wrapperDiv.removeChild('renderContactPage()');
+    const nodes = helperModule.wrapperDiv().childNodes;
+    for(let i = 1; i < nodes.length; i++) {
+      nodes[i].remove();
+    }
   }
  
-
   Array.from(navBtns).forEach((btn) => {
     btn.addEventListener('click', (e) => {
       clearActive();
+      resetDom();
       if (e.target.textContent === 'HOME') {
         helperModule.appendTag(helperModule.wrapperDiv(), renderHomePage());
         btn.classList.add('active');
