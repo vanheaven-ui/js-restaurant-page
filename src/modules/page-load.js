@@ -1,6 +1,7 @@
 import header from './nav.js';
 import { renderHomePage } from './home.js';
 import renderMenuPage from './menu.js';
+import renderContactPage from './contact.js'
 
 
 const pageLoad = () => {
@@ -10,6 +11,7 @@ const pageLoad = () => {
 header();
 renderHomePage();
 renderMenuPage();
+renderContactPage()
 
 
 
