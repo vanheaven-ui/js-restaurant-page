@@ -1,7 +1,7 @@
 <div align="center">
-  <img src=src/images/screenshot.png alt=LOGO width=200px>
   <h1><b>JS Restraurant page</b></h1>
 
+<img src=src/images/screenshot.png alt=LOGO width=200px>
 
 A Restaurant page built with vanila javascript.
   
