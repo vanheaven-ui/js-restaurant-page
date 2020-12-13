@@ -97,10 +97,6 @@ const createDinner = () => {
   return dinnerItem;
 }
 
-console.log(createMenuItem.createTitle('Brunch', 'brunch'));
-console.log(createBreakfast());
-
-
 const renderMenuPage = () => {
   const menuSection = helperModule.createTag('section');
   const menuWrapper = helperModule.createTag('div');

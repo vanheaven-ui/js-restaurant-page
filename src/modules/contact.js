@@ -95,7 +95,7 @@ const createSections = (() => {
     return panelWrapper;
   }
 
-  const createMessageField= () => {
+  const createMessageField = () => {
     const panelWrapper = helperModule.createTag('div');
     panelWrapper.setAttribute('class', 'contact-panel');
     const h3 = createTitle('panel-title', 'Leave a message', 'h3');
