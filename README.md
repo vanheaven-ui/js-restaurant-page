@@ -9,9 +9,9 @@ A Restaurant page built with vanilla javascript.
 
 </div>
 
-<div style="center">
-  <h2><b>Index Page Screenshot</b></h2>
-</div>
+
+## Index Page Screenshot</h2>
+
 
 ![Screenshot](src/images/Screenshot.png)
 
