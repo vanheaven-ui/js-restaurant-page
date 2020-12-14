@@ -9,7 +9,7 @@ A Restaurant page built with vanilla javascript.
 
 </div>
 
-## Index Page Screenshot
+<h2 style="center"><b>Index Page Screenshot</b></h2>
 
 ![Screenshot](src/images/Screenshot.png)
 
@@ -29,7 +29,7 @@ This project was a task by Microverse Inc. to build a Javascript restaurant page
 ## App Deployment
 The built app is published through Github pages <br />
 
-### You can see live version [here](#)
+### You can see live version [here](https://vanheaven-ui.github.io/js-restaurant-page/)
 
 ## 🔧 Built with<a name = "with"></a>
 
