@@ -1,9 +1,7 @@
 <div align="center">
-  <img src=src/images/screenshot.png alt=LOGO width=200px>
-  <h1><b>JS Restraurant page</b></h1>
+  <h1><b>JS Restaurant page</b></h1>
 
-
-A Restaurant page built with vanila javascript.
+A Restaurant page built with vanilla javascript.
   
 [![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/vanheaven-ui/js-restaurant-page/pull/1)
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/vanheaven-ui/js-restaurant-page/pull/1)
@@ -26,12 +24,12 @@ A Restaurant page built with vanila javascript.
 
 
 ## About <a name = "about"></a>
-This project was a task by Microverse Inc. to build a Javascript restaurant page with a toggleable navigation tabs. All the page contents were created using javascript DOM manipulation methods and ES6 features were used for this project. 
+This project was a task by Microverse Inc. to build a Javascript restaurant page with a toggleable navigation tabs. All the page contents were created using javascript DOM manipulation methods and ES6 features. 
 
 ## App Deployment
 The built app is published through Github pages <br />
 
-### You can see live version [here]()
+### You can see live version [here](#)
 
 ## 🔧 Built with<a name = "with"></a>
 
@@ -60,7 +58,7 @@ Once you have a local copy of the entire project on your computer,
 If you don't meet the above prerequisites, then:
 
 - Visit [node download and installations docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install node js and npm.
-- then `run npm install` in the terminal to install the project dependencies in the package.json file.
+- Then  run `npm install` in the terminal to install the project dependencies in the package.json file.
 
 ###  App <a name = "app"></a>
 With the installations above complete, you are set to use the code and view the application built in this repository. Follow these simple steps:
