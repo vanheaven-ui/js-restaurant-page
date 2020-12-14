@@ -1,15 +1,7 @@
 <div align="center">
-<<<<<<< HEAD
   <h1><b>JS Restaurant page</b></h1>
 
 A Restaurant page built with vanilla javascript.
-=======
-  <h1><b>JS Restraurant page</b></h1>
-
-<img src=src/images/screenshot.png alt=LOGO width=200px>
-
-A Restaurant page built with vanila javascript.
->>>>>>> 1b6c6d2d962e12c62654eda4e8015e9823f2f2f5
   
 [![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/vanheaven-ui/js-restaurant-page/pull/1)
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/vanheaven-ui/js-restaurant-page/pull/1)
