@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'MyFont';
+  font-family: 'myFont';
   src: url('../fonts/Langar-Regular.ttf') format('ttf');
 }
 
@@ -87,7 +87,6 @@ h1 {
   border-left: 5px solid #ffc822;
   border-bottom-right-radius: 200px;
   border-right: 5px solid #ffc822;
-  font-family: 'myFont';
 }
 
 .nav-wrapper {
@@ -211,7 +210,6 @@ nav {
   width: max-content;
   margin: 30px auto 20px;
   padding: 0 12px;
-  font-family: 'myFont';
 }
 
 .item-note {

@@ -1,5 +1,5 @@
 import header from './nav';
-import { renderHomePage } from './home';
+import renderHomePage from './home';
 import renderMenuPage from './menu';
 import renderContactPage from './contact';
 import helperModule from './helpers';
@@ -15,15 +15,15 @@ const pageLoad = () => {
     Array.from(navBtns).forEach((btn) => {
       btn.classList.remove('active');
     });
-  }
+  };
 
   const resetDom = () => {
     const nodes = helperModule.wrapperDiv().childNodes;
-    for(let i = 1; i < nodes.length; i++) {
+    for (let i = 1; i < nodes.length; i += 1) {
       nodes[i].remove();
-    }
-  }
- 
+    };
+  };
+  
   Array.from(navBtns).forEach((btn) => {
     btn.addEventListener('click', (e) => {
       clearActive();
@@ -31,10 +31,10 @@ const pageLoad = () => {
       if (e.target.textContent === 'HOME') {
         helperModule.appendTag(helperModule.wrapperDiv(), renderHomePage());
         btn.classList.add('active');
-      } else if (e.target.textContent === 'MENU') {
+      }else if (e.target.textContent === 'MENU') {
         helperModule.appendTag(helperModule.wrapperDiv(), renderMenuPage());
         btn.classList.add('active');
-      } else if ( e.target.textContent === 'CONTACT') {
+      }else if ( e.target.textContent === 'CONTACT') {
         helperModule.appendTag(helperModule.wrapperDiv(), renderContactPage());
         btn.classList.add('active');
       }
@@ -42,4 +42,4 @@ const pageLoad = () => {
   });
 }
 
-export { pageLoad };
+export default pageLoad;

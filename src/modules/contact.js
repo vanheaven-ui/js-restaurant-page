@@ -10,29 +10,29 @@ const createSections = (() => {
   const pTags = [
     {
       tag: 'p',
-      text: 'Address: Kampala Uganda'
+      text: 'Address: Kampala Uganda',
     }, 
     {
       tag: 'p',
-      text: 'Email: ebtwino718@yahoo.com'
+      text: 'Email: ebtwino718@yahoo.com',
     }, 
     {
       tag: 'p',
-      text: 'Mobile: 0785163925'
-    }
+      text: 'Mobile: 0785163925',
+    },
   ];
 
   const createTitle = (classAttribute, text, h) => {
     const title = helperModule.createTag(h, text);
     title.setAttribute('class', classAttribute);
     return title;
-  }
+  };
 
   const createLabel = (value, forAttr) => {
     const lab = helperModule.createTag('label', value);
     lab.setAttribute('for', forAttr);
     return lab;
-  }
+  };
 
   const createInput = (type, id, name) => {
     const input = helperModule.createTag('input');
@@ -40,7 +40,7 @@ const createSections = (() => {
     input.setAttribute('id', id);
     input.setAttribute('name', name);
     return input;
-  }
+  };
 
   const createFormField = (value, forAttr, type, id, name) => {
     const formField = helperModule.createTag('div');
@@ -50,7 +50,7 @@ const createSections = (() => {
     const input = createInput(type, id, name);
     helperModule.appendTag(formField, input);
     return formField;
-  }
+  };
 
   const createSubmitBtn = (type, value) => {
     const btnField = helperModule.createTag('div');
@@ -60,7 +60,7 @@ const createSections = (() => {
     btn.textContent = value;
     helperModule.appendTag(btnField, btn);
     return btnField;
-  }
+  };
 
   const createForm = () => {
     const form = helperModule.createTag('form');
@@ -72,15 +72,15 @@ const createSections = (() => {
     const submitBtn = createSubmitBtn('submit', 'Send Message')
     helperModule.appendTag(form, submitBtn);
     return form;
-  }
+  };
 
   const createPanel = () => {
     const panelWrapper = helperModule.createTag('div', panelItems);
     panelWrapper.setAttribute('class', 'nav-panel');
     return panelWrapper;
-  }
+  };
 
-  const createContactPanel= () => {
+  const createContactPanel = () => {
     const panelWrapper = helperModule.createTag('div');
     panelWrapper.setAttribute('class', 'contact-panel');
     const h3 = createTitle('panel-title', 'Contact Information', 'h3');
@@ -93,7 +93,7 @@ const createSections = (() => {
       helperModule.appendTag(panelWrapper, pTag);
     });
     return panelWrapper;
-  }
+  };
 
   const createMessageField = () => {
     const panelWrapper = helperModule.createTag('div');
@@ -103,13 +103,10 @@ const createSections = (() => {
     const close = helperModule.createTag('span', '&times;');
     close.setAttribute('class', 'close');
     helperModule.appendTag(panelWrapper, close);
-    
     helperModule.appendTag(panelWrapper, createForm());
 
     return panelWrapper;
-  }
-
-
+  };
 
   return { createPanel, createContactPanel, createMessageField };
 })();
@@ -125,18 +122,13 @@ const renderContactPage = () => {
   contactSubHeading.textContent = 'Let us talk food!';
   helperModule.appendTag(contactWrapper, contactSubHeading);
   const navPanel = helperModule.createTag('div');
-  navPanel.setAttribute('class', 'panel')
+  navPanel.setAttribute('class', 'panel');
   const contactSections = helperModule.createTag('div');
   contactSections.setAttribute('class', 'contact-fields');
-  
   helperModule.appendTag(navPanel, createSections.createPanel());
-
   helperModule.appendTag(contactSections, createSections.createContactPanel());
-
   helperModule.appendTag(contactSections, createSections.createMessageField());
-
   helperModule.appendTag(navPanel, contactSections);
- 
   helperModule.appendTag(contactWrapper, navPanel);
 
   return contactWrapper;

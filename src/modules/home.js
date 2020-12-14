@@ -22,27 +22,23 @@ const renderHomePage = () => {
   `;
 
   const sectionWrapper = helperModule.createTag('section');
-  sectionWrapper.setAttribute('class', 'main-content')  
-
+  sectionWrapper.setAttribute('class', 'main-content');
   const leftMainSection = helperModule.createTag('section');
   leftMainSection.setAttribute('class', 'left-section');
-    const leftWrapper = helperModule.createTag('div')
-    leftWrapper.setAttribute('class', 'text');
-      const mainText = helperModule.createTag('h1', headingText);
-      mainText.setAttribute('class', 'heading')
-      helperModule.appendTag(leftWrapper, mainText);
-
-      const orderBtn = helperModule.createTag('button', 'Order Online');
-      helperModule.appendTag(leftWrapper, orderBtn);
-
-      const highlights = helperModule.createTag('div')
-        const credits = helperModule.createTag('ul', listItems);
-        credits.setAttribute('class', 'credit');
-        helperModule.appendTag(highlights, credits);
-      helperModule.appendTag(leftWrapper, highlights);
-    helperModule.appendTag(leftMainSection, leftWrapper);
+  const leftWrapper = helperModule.createTag('div')
+  leftWrapper.setAttribute('class', 'text');
+  const mainText = helperModule.createTag('h1', headingText);
+  mainText.setAttribute('class', 'heading')
+  helperModule.appendTag(leftWrapper, mainText);
+  const orderBtn = helperModule.createTag('button', 'Order Online');
+  helperModule.appendTag(leftWrapper, orderBtn);
+  const highlights = helperModule.createTag('div')
+  const credits = helperModule.createTag('ul', listItems);
+  credits.setAttribute('class', 'credit');
+  helperModule.appendTag(highlights, credits);
+  helperModule.appendTag(leftWrapper, highlights);
+  helperModule.appendTag(leftMainSection, leftWrapper);
   helperModule.appendTag(sectionWrapper, leftMainSection);
-
   const rightMainSection = helperModule.createTag('section');
   rightMainSection.setAttribute('class', 'right-section');
   helperModule.appendTag(sectionWrapper, rightMainSection);
@@ -50,4 +46,4 @@ const renderHomePage = () => {
   return sectionWrapper;
 }
 
-export { renderHomePage };
+export default renderHomePage;
