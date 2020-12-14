@@ -1,4 +1,4 @@
-import helperModule from './helpers.js';
+import helperModule from './helpers';
 import myLogo from '../images/logo.png';
 
   const helperMethods = (() => {

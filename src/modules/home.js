@@ -1,4 +1,4 @@
-import helperModule from './helpers.js';
+import helperModule from './helpers';
 
 const renderHomePage = () => {
   const headingText = `
@@ -20,7 +20,7 @@ const renderHomePage = () => {
       <p class='credit-text'>24/7 available</p>
     </li>
   `;
-  
+
   const sectionWrapper = helperModule.createTag('section');
   sectionWrapper.setAttribute('class', 'main-content')  
 

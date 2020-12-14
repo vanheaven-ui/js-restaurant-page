@@ -1,10 +1,10 @@
-import helperModule from './helpers.js';
+import helperModule from './helpers';
 
 const createSections = (() => {
   const panelItems = `
-    <button id="address">ADDRESS</button>
-    <button id="Email">MESSAGE</button>
-    <button id="Mobile">SOCIAL</button>
+    <button id="address" class="panel-item">ADDRESS</button>
+    <button id="Email" class="panel-item">MESSAGE</button>
+    <button id="Mobile" class="panel-item">SOCIAL</button>
   `;
 
   const pTags = [
@@ -113,7 +113,6 @@ const createSections = (() => {
 
   return { createPanel, createContactPanel, createMessageField };
 })();
-
 
 const renderContactPage = () => {
   const contactWrapper = helperModule.createTag('section');

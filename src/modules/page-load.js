@@ -1,8 +1,8 @@
-import header from './nav.js';
-import { renderHomePage } from './home.js';
-import renderMenuPage from './menu.js';
-import renderContactPage from './contact.js'
-import helperModule from './helpers.js';
+import header from './nav';
+import { renderHomePage } from './home';
+import renderMenuPage from './menu';
+import renderContactPage from './contact'
+import helperModule from './helpers';
 
 // this function is used to toggle the tabs to load the different pages
 const pageLoad = () => {
