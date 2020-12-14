@@ -1,7 +1,7 @@
 import header from './nav';
 import { renderHomePage } from './home';
 import renderMenuPage from './menu';
-import renderContactPage from './contact'
+import renderContactPage from './contact';
 import helperModule from './helpers';
 
 // this function is used to toggle the tabs to load the different pages

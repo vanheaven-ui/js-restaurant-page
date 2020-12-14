@@ -1,5 +1,4 @@
 import helperModule from './helpers';
-import '../styles/custom.css';
 import menuImg from '../images/img.jpg';
 
 // Using Module
