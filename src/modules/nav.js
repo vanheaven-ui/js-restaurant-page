@@ -24,7 +24,7 @@ const helperMethods = (() => {
     // Create slogan p tag
     const slogan = helperModule.createTag(
       'p',
-      'signature cuisines await you...'
+      'signature cuisines await you...',
     );
     slogan.setAttribute('class', 'slogan-style');
     helperModule.appendTag(logoSection, slogan);
