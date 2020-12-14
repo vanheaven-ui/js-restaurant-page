@@ -21,7 +21,7 @@ const pageLoad = () => {
     const nodes = helperModule.wrapperDiv().childNodes;
     for (let i = 1; i < nodes.length; i += 1) {
       nodes[i].remove();
-    };
+    }
   };
   
   Array.from(navBtns).forEach((btn) => {
@@ -31,15 +31,15 @@ const pageLoad = () => {
       if (e.target.textContent === 'HOME') {
         helperModule.appendTag(helperModule.wrapperDiv(), renderHomePage());
         btn.classList.add('active');
-      }else if (e.target.textContent === 'MENU') {
+      }else  if (e.target.textContent === 'MENU') {
         helperModule.appendTag(helperModule.wrapperDiv(), renderMenuPage());
         btn.classList.add('active');
-      }else if ( e.target.textContent === 'CONTACT') {
+      }else  if (e.target.textContent === 'CONTACT') {
         helperModule.appendTag(helperModule.wrapperDiv(), renderContactPage());
         btn.classList.add('active');
       }
     });
   });
-}
+};
 
 export default pageLoad;

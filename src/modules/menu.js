@@ -35,7 +35,7 @@ const createMenuItem = (() => {
 
 
   return {
-    createImgTag, createTitle, createMenu, createItemDesc
+    createImgTag, createTitle, createMenu, createItemDesc,
   };
 })();
 
@@ -46,7 +46,7 @@ const createBreakfast = () => {
   const itemDesc = createMenuItem.createItemDesc('14.99', 'This menu item description goes here');
   helperModule.appendTag(breakfastItem, itemDesc);
   return breakfastItem;
-}
+};
 
 const createBrunch = () => {
   const brunchItem = createMenuItem.createMenu('menu-item');
@@ -55,7 +55,7 @@ const createBrunch = () => {
   const itemDesc = createMenuItem.createItemDesc('24.99', 'This menu item description goes here');
   helperModule.appendTag(brunchItem, itemDesc);
   return brunchItem;
-}
+};
 
 const createLunch = () => {
   const lunchItem = createMenuItem.createMenu('menu-item');
@@ -64,7 +64,7 @@ const createLunch = () => {
   const itemDesc = createMenuItem.createItemDesc('39.99', 'This menu item description goes here');
   helperModule.appendTag(lunchItem, itemDesc);
   return lunchItem;
-}
+};
 
 const createDinner = () => {
   const dinnerItem = createMenuItem.createMenu('menu-item');
@@ -73,7 +73,7 @@ const createDinner = () => {
   const itemDesc = createMenuItem.createItemDesc('50.99', 'This menu item description goes here');
   helperModule.appendTag(dinnerItem, itemDesc);
   return dinnerItem;
-}
+};
 
 const renderMenuPage = () => {
   const selectItems = `
@@ -83,7 +83,7 @@ const renderMenuPage = () => {
     <option value="Lunch">Lunch</option>
     <option value="Dinner">Dinner</option>
   `;
-  
+
   const menuSection = helperModule.createTag('section');
   menuSection.setAttribute('class', 'menu-section');
   const menuWrapper = helperModule.createTag('div');
@@ -93,7 +93,7 @@ const renderMenuPage = () => {
   helperModule.appendTag(menuWrapper, selectMenu);
   const menus = helperModule.createTag('div');
   menus.setAttribute('class', 'menus');
-  //create breakfast section
+  //  create breakfast section
   const breakfastMenu = createMenuItem.createMenu('breakfast');
   const breakfastTitle = createMenuItem.createTitle('Breakfast Menu', 'menu-title');
   helperModule.appendTag(breakfastMenu, breakfastTitle);
@@ -102,7 +102,7 @@ const renderMenuPage = () => {
   helperModule.appendTag(breakfastMenu, createBreakfast());
   helperModule.appendTag(breakfastMenu, createBreakfast());
   helperModule.appendTag(menus, breakfastMenu);
-  //create brunch section
+  //  create brunch section
   const brunchMenu = createMenuItem.createMenu('brunch');
   const brunchTitle = createMenuItem.createTitle('Brunch Menu', 'menu-title');
   helperModule.appendTag(brunchMenu, brunchTitle);
@@ -132,6 +132,6 @@ const renderMenuPage = () => {
   helperModule.appendTag(menuSection, menuWrapper);
 
   return menuSection;
-}
+};
 
 export default renderMenuPage;

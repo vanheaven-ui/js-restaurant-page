@@ -1,12 +1,12 @@
-import helperModule from "./helpers";
-import myLogo from "../images/logo.png";
+import helperModule from './helpers';
+import myLogo from '../images/logo.png';
 
 const helperMethods = (() => {
   const createBtn = (classAttr, parent, value) => {
-    const btn = helperModule.createTag("button");
-    btn.setAttribute("class", classAttr);
-    if (value === "HOME") {
-      btn.classList.add("active");
+    const btn = helperModule.createTag('button');
+    btn.setAttribute('class', classAttr);
+    if (value === 'HOME') {
+      btn.classList.add('active');
     }
     btn.textContent = value;
     helperModule.appendTag(parent, btn);
@@ -14,19 +14,19 @@ const helperMethods = (() => {
   };
 
   const createLogoSection = () => {
-    const logoSection = helperModule.createTag("div");
-    logoSection.setAttribute("id", "logo-section");
+    const logoSection = helperModule.createTag('div');
+    logoSection.setAttribute('id', 'logo-section');
     //  Create img tag
     const logo = new Image();
     logo.src = myLogo;
-    logo.setAttribute("alt", "UDine");
+    logo.setAttribute('alt', 'UDine');
     helperModule.appendTag(logoSection, logo);
     // Create slogan p tag
     const slogan = helperModule.createTag(
-      "p",
-      "signature cuisines await you..."
+      'p',
+      'signature cuisines await you...'
     );
-    slogan.setAttribute("class", "slogan-style");
+    slogan.setAttribute('class', 'slogan-style');
     helperModule.appendTag(logoSection, slogan);
     return logoSection;
   };
@@ -35,15 +35,15 @@ const helperMethods = (() => {
 })();
 
 const header = () => {
-  const hdr = helperModule.createTag("nav");
-  hdr.setAttribute("id", "nav-bar");
-  //Create logo Section
+  const hdr = helperModule.createTag('nav');
+  hdr.setAttribute('id', 'nav-bar');
+  //  Create logo Section
   helperModule.appendTag(hdr, helperMethods.createLogoSection());
   // create Nav buttons
-  const btnWrapper = helperModule.createTag("div");
-  helperMethods.createBtn("nav-button", btnWrapper, "HOME");
-  helperMethods.createBtn("nav-button", btnWrapper, "MENU");
-  helperMethods.createBtn("nav-button", btnWrapper, "CONTACT");
+  const btnWrapper = helperModule.createTag('div');
+  helperMethods.createBtn('nav-button', btnWrapper, 'HOME');
+  helperMethods.createBtn('nav-button', btnWrapper, 'MENU');
+  helperMethods.createBtn('nav-button', btnWrapper, 'CONTACT');
   helperModule.appendTag(hdr, btnWrapper);
 
   return hdr;

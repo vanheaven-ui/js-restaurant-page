@@ -11,11 +11,11 @@ const createSections = (() => {
     {
       tag: 'p',
       text: 'Address: Kampala Uganda',
-    }, 
+    },
     {
       tag: 'p',
       text: 'Email: ebtwino718@yahoo.com',
-    }, 
+    },
     {
       tag: 'p',
       text: 'Mobile: 0785163925',
@@ -69,7 +69,7 @@ const createSections = (() => {
     helperModule.appendTag(form, field1);
     const field2 = createFormField('Email', 'email', 'email', 'email', 'email');
     helperModule.appendTag(form, field2);
-    const submitBtn = createSubmitBtn('submit', 'Send Message')
+    const submitBtn = createSubmitBtn('submit', 'Send Message');
     helperModule.appendTag(form, submitBtn);
     return form;
   };
@@ -132,6 +132,6 @@ const renderContactPage = () => {
   helperModule.appendTag(contactWrapper, navPanel);
 
   return contactWrapper;
-}
+};
 
 export default renderContactPage;

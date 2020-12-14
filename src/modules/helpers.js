@@ -4,7 +4,7 @@ const helperModule = (() => {
     elem.innerHTML = value;
     return elem;
   };
-  
+
   const wrapperDiv = () => document.getElementById('content');
   const appendTag = (parent, child) => {
     parent.appendChild(child);
