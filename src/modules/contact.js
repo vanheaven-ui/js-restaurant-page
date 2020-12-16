@@ -83,11 +83,11 @@ const createSections = (() => {
   const createContactPanel = () => {
     const panelWrapper = helperModule.createTag('div');
     panelWrapper.setAttribute('class', 'contact-panel');
-    const h3 = createTitle('panel-title', 'Contact Information', 'h3');
-    helperModule.appendTag(panelWrapper, h3);
     const close = helperModule.createTag('span', '&times;');
     close.setAttribute('class', 'close');
     helperModule.appendTag(panelWrapper, close);
+    const h3 = createTitle('panel-title', 'Contact Information', 'h3');
+    helperModule.appendTag(panelWrapper, h3);
     pTags.forEach((p) => {
       const pTag = helperModule.createTag(`${p.tag}`, `${p.text}`);
       helperModule.appendTag(panelWrapper, pTag);
@@ -98,11 +98,11 @@ const createSections = (() => {
   const createMessageField = () => {
     const panelWrapper = helperModule.createTag('div');
     panelWrapper.setAttribute('class', 'contact-panel');
-    const h3 = createTitle('panel-title', 'Leave a message', 'h3');
-    helperModule.appendTag(panelWrapper, h3);
     const close = helperModule.createTag('span', '&times;');
     close.setAttribute('class', 'close');
     helperModule.appendTag(panelWrapper, close);
+    const h3 = createTitle('panel-title', 'Leave a message', 'h3');
+    helperModule.appendTag(panelWrapper, h3);
     helperModule.appendTag(panelWrapper, createForm());
 
     return panelWrapper;
@@ -110,6 +110,8 @@ const createSections = (() => {
 
   return { createPanel, createContactPanel, createMessageField };
 })();
+
+console.log(createSections.createPanel().childNodes);
 
 const renderContactPage = () => {
   const contactWrapper = helperModule.createTag('section');

@@ -90,6 +90,7 @@ const renderMenuPage = () => {
   menuWrapper.setAttribute('class', 'menu-bar');
   const selectMenu = helperModule.createTag('select', selectItems);
   selectMenu.setAttribute('id', 'name');
+  selectMenu.setAttribute('class', 'name');
   helperModule.appendTag(menuWrapper, selectMenu);
   const menus = helperModule.createTag('div');
   menus.setAttribute('class', 'menus');
