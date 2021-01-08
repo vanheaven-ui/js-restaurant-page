@@ -13,7 +13,7 @@ A Restaurant page built with vanilla javascript.
 ## Index Page Screenshot</h2>
 
 
-![Screenshot](src/images/Screenshot.png)
+![Screenshot](src/images/Screenshot.gif)
 
 ## Content
 
