@@ -29,9 +29,9 @@ A Restaurant page built with vanilla javascript.
 This project was a task by Microverse Inc. to build a Javascript restaurant page with a toggleable navigation tabs. All the page contents were created using javascript DOM manipulation methods and ES6 features. 
 
 ## App Deployment
-The built app is published through Github pages <br />
+The built app is hosted on netlify <br />
 
-### You can see live version [here](https://vanheaven-ui.github.io/js-restaurant-page/)
+### You can see live version [here](https://cocky-noyce-8717b0.netlify.app/)
 
 ## 🔧 Built with<a name = "with"></a>
 
