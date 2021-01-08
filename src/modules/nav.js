@@ -37,6 +37,7 @@ const helperMethods = (() => {
 const header = () => {
   const hdr = helperModule.createTag('nav');
   hdr.setAttribute('id', 'nav-bar');
+  hdr.setAttribute('style', 'display: flex; justify-content: space-around; align-items: center; backgroung-color: #333; color: #fff;');
   //  Create logo Section
   helperModule.appendTag(hdr, helperMethods.createLogoSection());
   // create Nav buttons

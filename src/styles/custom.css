@@ -65,7 +65,7 @@ h1 {
 }
 
 #logo-section img {
-  width: 200px;
+  width: 120px;
   border-radius: 20%;
 }
 
@@ -102,9 +102,10 @@ h1 {
 }
 
 nav {
-  width: max-content;
   margin: 0 auto;
   padding: 16px 0;
+  background-color: #333;
+  color: #fff;
 }
 
 .nav-button {
