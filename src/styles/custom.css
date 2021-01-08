@@ -195,7 +195,7 @@ nav {
   border-radius: 20px;
   width: 30%;
   outline: none;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
   transition: all 0.5s;
 }
 
@@ -206,6 +206,7 @@ nav {
 .menu-bar {
   background-image: url(../images/img1.jpg);
   background-size: 20%;
+  padding-top: 30px;
 }
 
 .menus {

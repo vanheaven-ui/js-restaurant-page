@@ -87,7 +87,8 @@ const renderMenuPage = () => {
   const menuSection = helperModule.createTag('section');
   menuSection.setAttribute('class', 'menu-section');
   const menuWrapper = helperModule.createTag('div');
-  menuWrapper.setAttribute('class', 'menu-bar');
+  menuWrapper.classList.add('class', 'menu-bar');
+  menuWrapper.setAttribute('style', 'height: 78vh;');
   const selectMenu = helperModule.createTag('select', selectItems);
   selectMenu.setAttribute('id', 'name');
   selectMenu.setAttribute('class', 'name');
