@@ -74,8 +74,8 @@ h1 {
   font-weight: 700;
   font-size: 1.2rem;
   font-family: math;
-  margin-bottom: 16px;
   font-style: italic;
+  margin-bottom: 0;
 }
 
 .heading {
