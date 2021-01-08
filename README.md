@@ -31,7 +31,7 @@ This project was a task by Microverse Inc. to build a Javascript restaurant page
 ## App Deployment
 The built app is published through Github pages <br />
 
-### You can see live version [here](https://vanheaven-ui.github.io/js-restaurant-page/)
+### You can see live version [here](https://cocky-noyce-8717b0.netlify.app/)
 
 ## 🔧 Built with<a name = "with"></a>
 
