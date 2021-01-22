@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><b>JS Restaurant page</b></h1>
+  <h1><b>JS Restaurant Page</b></h1>
 
 A Restaurant page built with vanilla javascript.
   
